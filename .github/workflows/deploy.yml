@@ -15,8 +15,8 @@ jobs:
       - name: Descargar codigo
         uses: actions/checkout@v4
 
-          # - name: Mostrar archivos
-          # run: ls -la
+           - name: Mostrar archivos
+           - run: ls -la
 
       - name: Detener contenedor anterior
         run: |
@@ -30,7 +30,7 @@ jobs:
       - name: Ejecutar contenedor
         run: |
           docker run -d \
-            -p 8080:80 \
+            -p 8070:80 \
             --name web \
             practica9-cicd:v1
 

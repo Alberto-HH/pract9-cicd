@@ -15,8 +15,8 @@ jobs:
       - name: Descargar codigo
         uses: actions/checkout@v4
 
-      - name: Mostrar archivos
-        run: ls -la
+          # - name: Mostrar archivos
+          # run: ls -la
 
       - name: Detener contenedor anterior
         run: |
